@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Full Test Suite" parallel="tests" thread-count="2">
     <listeners>
-        <listener class-name="ivan.testng.listener.DemoListener"/>
+        <listener class-name="testng.listener.DemoListener"/>
     </listeners>
 
     <test name="AppiumDemoTest">
         <classes>
-            <class name="ivan.testng.demo.DataProviderDemoTest"/>
+            <class name="testng.demo.DataProviderDemoTest"/>
         </classes>
     </test>
     <test verbose="1" name="TimeOutDemoTest">
         <classes>
-            <class name="ivan.testng.demo.TimeOutDemoTest">
+            <class name="testng.demo.TimeOutDemoTest">
                 <methods>
                     <!--                    will exclude all test methods, where name is starting with "time.."-->
                     <exclude name="time.*"/>
@@ -22,7 +22,7 @@
     </test>
     <!--    <test verbose="10" name="MobileBrowserDemoTest"> //verbose="10" will provide more detailed console output-->
     <!--        <classes>-->
-    <!--            <class name="TimeOutDemoTest">-->
+    <!--            <class name="testng.demo.TimeOutDemoTest">-->
     <!--                <methods>-->
     <!--                    <exclude name="checkProductDescription"/>//will exclude only method 'checkProductDescription'-->
     <!--                </methods>-->

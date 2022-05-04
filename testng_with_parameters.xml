@@ -5,7 +5,7 @@
     <parameter name="API" value="API definition example"/>
     <test name="AppiumDemoTest">
         <classes>
-            <class name="ivan.testng.demo.ParamDemoTest"/>
+            <class name="testng.demo.ParamDemoTest"/>
         </classes>
     </test>
 

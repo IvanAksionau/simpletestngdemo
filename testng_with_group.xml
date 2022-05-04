@@ -11,8 +11,8 @@
             </run>
         </groups>
         <classes>
-            <class name="ivan.testng.demo.GroupDemoTest"/>
-            <class name="ivan.testng.demo.TimeOutDemoTest"/>
+            <class name="testng.demo.GroupDemoTest"/>
+            <class name="testng.demo.TimeOutDemoTest"/>
         </classes>
     </test>
 </suite>
