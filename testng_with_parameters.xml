@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full Test Suite">
+    <parameter name="URL" value="http://some.value"/>
+    <parameter name="API" value="API definition example"/>
+    <test name="AppiumDemoTest">
+        <classes>
+            <class name="ivan.testng.demo.ParamDemoTest"/>
+        </classes>
+    </test>
+
+
+</suite>

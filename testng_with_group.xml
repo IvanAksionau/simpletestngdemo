@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tagged tests demo">
+
+    <test name="AppiumDemoTest">
+        <groups>
+            <run>
+                <!-- //this is how we specify expected tag for test execution-->
+                <include name="Smoke"/>
+                <!-- <exclude name="Smoke"/>//this is how we specify expected tag to exclude-->
+            </run>
+        </groups>
+        <classes>
+            <class name="ivan.testng.demo.GroupDemoTest"/>
+            <class name="ivan.testng.demo.TimeOutDemoTest"/>
+        </classes>
+    </test>
+</suite>
