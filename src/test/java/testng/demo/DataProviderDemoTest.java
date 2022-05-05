@@ -7,7 +7,16 @@ import org.testng.annotations.Test;
 public class DataProviderDemoTest {
 
     @Test(dataProvider = "DataContainer")
-    public void groupDemoCheck(String key,String value) {
+    public void groupDemoCheck(String key, String value) {
+        System.out.println(this.getClass().getCanonicalName());
+        System.out.println("Key value is: " + key);
+        System.out.println("Value is: " + value);
+
+        Assert.assertTrue(true);
+    }
+
+    @Test(dataProvider = "InputData", dataProviderClass = TestData.class)
+    public void externalDataProviderDemoTest(String key, String value) {
         System.out.println(this.getClass().getCanonicalName());
         System.out.println("Key value is: " + key);
         System.out.println("Value is: " + value);
